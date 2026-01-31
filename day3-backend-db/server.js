@@ -8,6 +8,9 @@ const Task = require("./models/Task");
 const app = express();
 app.use(express.json());
 
+const cors = require("cors")
+app.use(cors());
+
 // -------------------------------------
 // CONNECT TO MONGODB
 // -------------------------------------
